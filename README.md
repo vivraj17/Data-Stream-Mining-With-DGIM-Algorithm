@@ -24,6 +24,14 @@ Implementation of DGIM algorithm involves creating bucket of new bits and mainta
 
 In this project, Multithreading program has been implemented. One thread handles the continuous bit of stream from server and eventually responsible for maintainance of bucket table. Whereas other thread handles the query and estimate the count of ones.
 
+Files Description:
+        Main.java: Initialisation of project.
+        DataStructure Classes: Timestamp.java, DGIMData.java, Bucket.java
+        Implementations: ReadPackets.java - A thread function to read the data stream of packets received from server.
+                         ReadQuery.java - A thread function to read the query from system.in for the analysis of streams.
+                         Print.java -  To print the synchronised output.
+                         Server.py - A prototype application to generate input for the applicaton.
+
 Usage:
         
     To run the server
